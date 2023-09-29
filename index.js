@@ -67,7 +67,7 @@ function init() {
     inquirer
         .prompt(questions).then((data) => {
             let markdown = generateMarkdown(data);
-            let fileName =  `${data.title.toLowerCase().split(' ').join('')}.md`
+            let fileName =  data.title ? `${data.title.toLowerCase().split(' ').join('-')}.md` : 'generated-readme.md';
             writeToFile(fileName, markdown);
         });
 }

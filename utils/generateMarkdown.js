@@ -35,10 +35,10 @@ function generateMarkdown(data) {
   ${data.license}
 
   ## Credits
-  ${data.credits}
+  ${data.credits ? "This project was created by " + data.credits : ""}
 
-  ## Tests
-  ${data.tests}
+  
+  ${data.tests ? "## Tests\n" + data.tests : ""}
 
   ## Questions
   Please contact me with any questions at:
