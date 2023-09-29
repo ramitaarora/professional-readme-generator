@@ -18,29 +18,29 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  - Installation
-  - Usage
-  - License
-  - Credits
-  - Tests
-  - Questions
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Credits](#credits)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-  ## Installation
+  ## <a name="installation">Installation</a>
   ${data.installation}
 
-  ## Usage
+  ## <a name="usage">Usage</a>
   ${data.usage}
 
-  ## License
+  ## <a name="license">License</a>
   ${data.license}
 
-  ## Credits
-  ${data.credits ? "This project was created by " + data.credits : ""}
+  ## <a name="credits">Credits</a>
+  "This project was created by " ${data.credits}
 
-  
-  ${data.tests ? "## Tests\n" + data.tests : ""}
+  ## <a name="tests">Tests</a>
+  ${data.tests}
 
-  ## Questions
+  ## <a name="questions">Questions</a>
   Please contact me with any questions at:
 
   ${data.email} or ${data.github}
