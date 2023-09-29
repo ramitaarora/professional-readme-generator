@@ -55,8 +55,6 @@ const questions = [
     },
 ]
 
-
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
@@ -66,13 +64,12 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    let markdown;
-    let fileName;
-    inquirer.prompt(questions).then((data) => {
-        markdown = generateMarkdown(data);
-        fileName =  `${data.title.toLowerCase().split(' ').join('')}.md`
-    });
-    writeToFile(fileName, markdown);
+    inquirer
+        .prompt(questions).then((data) => {
+            let markdown = generateMarkdown(data);
+            let fileName =  `${data.title.toLowerCase().split(' ').join('')}.md`
+            writeToFile(fileName, markdown);
+        });
 }
 
 // Function call to initialize app
