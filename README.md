@@ -25,7 +25,7 @@ In the directory, run `npm install`.
 
 ## Usage
 
-<video></video>
+A video can be seen at: https://drive.google.com/file/d/1-E_HF8wJ9kwETZWbR0P9dgoJ977n4KYu/view
 
 ## Credits
 
