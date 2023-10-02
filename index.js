@@ -20,7 +20,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'How can this project be installed or accessed?',
+        message: 'What command can be used to install or access this project?',
         name: 'installation',
     },
     {
@@ -29,9 +29,10 @@ const questions = [
         name: 'usage',
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'What license does this fall under?',
         name: 'license',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
     },
     {
         type: 'input',
@@ -40,7 +41,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What tests are there for this application?',
+        message: 'What commands can be used to test this application?',
         name: 'tests',
     },
     {
