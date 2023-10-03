@@ -25,7 +25,11 @@ In the directory, run `npm install`.
 
 ## Usage
 
+The sample README can be found here: https://github.com/ramitaarora/professional-readme-generator/blob/main/sample-readme.md
+
 A video can be seen at: https://drive.google.com/file/d/1-E_HF8wJ9kwETZWbR0P9dgoJ977n4KYu/view
+
+<img src="./assets/images/generator-screenshot.png" alt="screenshot">
 
 ## Credits
 
