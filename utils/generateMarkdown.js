@@ -45,12 +45,12 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license === 'None') {
+function renderLicenseSection(licenseName) {
+  if (licenseName === 'None') {
     return '';
   } else {
-    return `## <a name="license">License</a>
-  This project is licensed under the ${license} license.`;
+    return `## License
+  This project is licensed under the ${licenseName} license.`;
   }
   
 }
@@ -72,23 +72,23 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## <a name="installation">Installation</a>
+  ## Installation
   To install or access this project, please use the following command:
   <code>${data.installation}</code>
 
-  ## <a name="usage">Usage</a>
-  ${data.usage}
+  ## Usage
+  ${data.usage ? data.usage : ''}
 
-  ${data.license? renderLicenseSection(data.license) : ''}
+  ${renderLicenseSection(data.license)}
 
-  ## <a name="credits">Credits</a>
+  ## Credits
   This project was created by ${data.credits}.
 
-  ## <a name="tests">Tests</a>
+  ## Tests
   To test this project, please use the following command:
   <code>${data.tests}</code>
 
-  ## <a name="questions">Questions</a>
+  ## Questions
   Please contact me with any questions at:
 
   ${data.email} or ${data.github}
